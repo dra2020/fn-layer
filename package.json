@@ -1,0 +1,46 @@
+{
+  "name": "@dra2020/fn-layer",
+  "version": "1.0.0",
+  "description": "AWS Lambda function for occaasional full patch runs on map database.",
+  "main": "dist/fn-layer.js",
+  "scripts": {
+    "build": "echo 'no build necessary'",
+    "prezip": "npm prune --production && rm -f deploy.zip && rm -rf node_modules/aws-sdk && mkdir nodejs && mv package-lock.json node_modules nodejs",
+    "postzip": "rm -rf nodejs && npm install",
+    "ziponly": "zip -q -r deploy.zip nodejs",
+    "fullzip": "npm run prezip && npm run ziponly && npm run postzip",
+    "awsdeploy": "aws lambda publish-layer-version --layer-name dralayer --compatible-runtimes nodejs10.x --zip-file fileb://deploy.zip",
+    "fulldeploy": "npm run fullzip && npm run awsdeploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dra2020/fn-layer.git"
+  },
+  "keywords": [
+    "AWS",
+    "Lambda"
+  ],
+  "author": "Terry Crowley",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dra2020/fn-layer/issues"
+  },
+  "homepage": "https://github.com/dra2020/fn-layer#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "@dra2020/context": "^1.0.14",
+    "@dra2020/dbabstract": "^1.4.2",
+    "@dra2020/dbdynamo": "^1.0.19",
+    "@dra2020/dra-types": "^1.4.5",
+    "@dra2020/fsm": "^1.3.1",
+    "@dra2020/lambda": "^1.0.8",
+    "@dra2020/logabstract": "^1.0.15",
+    "@dra2020/logserver": "^1.2.11",
+    "@dra2020/ot-editutil": "^2.1.2",
+    "@dra2020/ot-js": "^2.0.46",
+    "@dra2020/poly": "^1.0.42",
+    "@dra2020/storage": "^1.5.2",
+    "@dra2020/storages3": "^1.2.4",
+    "@dra2020/util": "^1.0.49"
+  }
+}
