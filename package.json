@@ -10,7 +10,9 @@
     "ziponly": "zip -q -r deploy.zip nodejs",
     "fullzip": "npm run prezip && npm run ziponly && npm run postzip",
     "awsdeploy": "aws lambda publish-layer-version --layer-name dralayer --compatible-runtimes nodejs10.x --zip-file fileb://deploy.zip",
-    "fulldeploy": "npm run fullzip && npm run awsdeploy"
+    "awsdeploy12": "aws lambda publish-layer-version --layer-name dralayer12 --compatible-runtimes nodejs12.x --zip-file fileb://deploy.zip",
+    "fulldeploy": "npm run fullzip && npm run awsdeploy",
+    "fulldeploy12": "npm run fullzip && npm run awsdeploy12"
   },
   "repository": {
     "type": "git",
@@ -30,17 +32,17 @@
   "dependencies": {
     "@dra2020/context": "^1.0.14",
     "@dra2020/dbabstract": "^1.4.2",
-    "@dra2020/dbdynamo": "^1.0.19",
+    "@dra2020/dbdynamo": "^1.0.21",
     "@dra2020/dra-types": "^1.5.10",
     "@dra2020/fsm": "^1.3.1",
-    "@dra2020/lambda": "^1.0.9",
+    "@dra2020/lambda": "^1.0.10",
     "@dra2020/logabstract": "^1.0.15",
     "@dra2020/logserver": "^1.2.11",
     "@dra2020/ot-editutil": "^2.1.6",
     "@dra2020/ot-js": "^2.0.47",
-    "@dra2020/poly": "^1.0.48",
+    "@dra2020/poly": "^1.1.1",
     "@dra2020/storage": "^1.5.4",
-    "@dra2020/storages3": "^1.2.6",
+    "@dra2020/storages3": "^1.2.7",
     "@dra2020/util": "^1.0.50"
   }
 }
