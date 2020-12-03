@@ -1,6 +1,6 @@
 {
   "name": "@dra2020/fn-layer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "AWS Lambda function for occaasional full patch runs on map database.",
   "main": "dist/fn-layer.js",
   "scripts": {
