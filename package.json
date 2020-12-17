@@ -33,7 +33,7 @@
     "@dra2020/context": "^1.0.15",
     "@dra2020/dbabstract": "^2.0.1",
     "@dra2020/dbdynamo": "^2.0.1",
-    "@dra2020/district-analytics": "^11.0.4",
+    "@dra2020/district-analytics": "^11.0.5",
     "@dra2020/dra-types": "^1.6.6",
     "@dra2020/fsm": "^1.3.3",
     "@dra2020/lambda": "^1.1.1",
