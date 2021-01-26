@@ -32,8 +32,8 @@
   "dependencies": {
     "@dra2020/baseclient": "^1.0.0",
     "@dra2020/baseserver": "^1.0.1",
-    "@dra2020/district-analytics": "^11.2.0",
-    "@dra2020/dra-types": "^1.7.1",
+    "@dra2020/district-analytics": "^11.3.0",
+    "@dra2020/dra-types": "^1.7.2",
     "shpjs": "^3.6.3"
   }
 }
