@@ -28,12 +28,12 @@
     "url": "https://github.com/dra2020/fn-layer/issues"
   },
   "homepage": "https://github.com/dra2020/fn-layer#readme",
-  "devDependencies": {},
   "dependencies": {
     "@dra2020/baseclient": "^1.0.26",
     "@dra2020/baseserver": "^1.0.18",
     "@dra2020/district-analytics": "^12.0.1",
     "@dra2020/dra-types": "^1.8.21",
+    "object-hash": "^2.2.0",
     "shpjs": "^3.6.3"
   }
 }
