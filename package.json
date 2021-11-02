@@ -32,7 +32,7 @@
     "@dra2020/baseclient": "^1.0.54",
     "@dra2020/baseserver": "^1.0.30",
     "@dra2020/district-analytics": "^15.3.0",
-    "@dra2020/dra-types": "^1.8.39",
+    "@dra2020/dra-types": "^1.8.42",
     "object-hash": "^2.2.0",
     "shpjs": "^4.0.2"
   }
