@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/dra2020/fn-layer#readme",
   "dependencies": {
-    "@dra2020/baseclient": "^1.0.81",
+    "@dra2020/baseclient": "^1.0.83",
     "@dra2020/baseserver": "^1.0.36",
     "@dra2020/district-analytics": "^16.0.2",
     "@dra2020/dra-types": "^1.8.60",
