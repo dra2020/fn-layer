@@ -9,10 +9,11 @@
     "postzip": "rm -rf nodejs && npm install",
     "ziponly": "zip -q -r deploy.zip nodejs",
     "fullzip": "npm run prezip && npm run ziponly && npm run postzip",
-    "awsdeploy": "aws lambda publish-layer-version --layer-name dralayer --compatible-runtimes nodejs10.x --zip-file fileb://deploy.zip",
     "awsdeploy12": "aws lambda publish-layer-version --layer-name dralayer12 --compatible-runtimes nodejs12.x --zip-file fileb://deploy.zip",
-    "fulldeploy": "npm run fullzip && npm run awsdeploy",
-    "fulldeploy12": "npm run fullzip && npm run awsdeploy12"
+    "awsdeploy14": "aws lambda publish-layer-version --layer-name dralayer14 --compatible-runtimes nodejs14.x --zip-file fileb://deploy.zip",
+    "fulldeploy": "npm run fulldeploy14",
+    "fulldeploy12": "npm run fullzip && npm run awsdeploy12",
+    "fulldeploy14": "npm run fullzip && npm run awsdeploy14"
   },
   "repository": {
     "type": "git",
