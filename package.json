@@ -11,10 +11,12 @@
     "fullzip": "npm run prezip && npm run ziponly && npm run postzip",
     "awsdeploy12": "aws lambda publish-layer-version --layer-name dralayer12 --compatible-runtimes nodejs12.x --zip-file fileb://deploy.zip",
     "awsdeploy14": "aws lambda publish-layer-version --layer-name dralayer14 --compatible-runtimes nodejs14.x --zip-file fileb://deploy.zip",
+    "awsdeploy16": "aws lambda publish-layer-version --layer-name dralayer16 --compatible-runtimes nodejs16.x --zip-file fileb://deploy.zip",
     "awsdeploy18": "aws lambda publish-layer-version --layer-name dralayer18 --compatible-runtimes nodejs18.x --zip-file fileb://deploy.zip",
-    "fulldeploy": "npm run fulldeploy14",
+    "fulldeploy": "npm run fulldeploy18",
     "fulldeploy12": "npm run fullzip && npm run awsdeploy12",
     "fulldeploy14": "npm run fullzip && npm run awsdeploy14",
+    "fulldeploy16": "npm run fullzip && npm run awsdeploy16",
     "fulldeploy18": "npm run fullzip && npm run awsdeploy18"
   },
   "repository": {
