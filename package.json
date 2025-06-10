@@ -13,11 +13,13 @@
     "awsdeploy14": "aws lambda publish-layer-version --layer-name dralayer14 --compatible-runtimes nodejs14.x --zip-file fileb://deploy.zip",
     "awsdeploy16": "aws lambda publish-layer-version --layer-name dralayer16 --compatible-runtimes nodejs16.x --zip-file fileb://deploy.zip",
     "awsdeploy18": "aws lambda publish-layer-version --layer-name dralayer18 --compatible-runtimes nodejs18.x --zip-file fileb://deploy.zip",
-    "fulldeploy": "npm run fulldeploy18",
+    "awsdeploy22": "aws lambda publish-layer-version --layer-name dralayer22 --compatible-runtimes nodejs22.x --zip-file fileb://deploy.zip",
+    "fulldeploy": "npm run fulldeploy22",
     "fulldeploy12": "npm run fullzip && npm run awsdeploy12",
     "fulldeploy14": "npm run fullzip && npm run awsdeploy14",
     "fulldeploy16": "npm run fullzip && npm run awsdeploy16",
-    "fulldeploy18": "npm run fullzip && npm run awsdeploy18"
+    "fulldeploy18": "npm run fullzip && npm run awsdeploy18",
+    "fulldeploy22": "npm run fullzip && npm run awsdeploy22"
   },
   "repository": {
     "type": "git",
@@ -36,8 +38,8 @@
   "dependencies": {
     "@dra2020/baseclient": "^1.0.153",
     "@dra2020/baseserver": "^2.0.30",
-    "@dra2020/district-analytics": "^16.1.10",
-    "@dra2020/dra-types": "^1.8.137",
+    "@dra2020/district-analytics": "^16.1.11",
+    "@dra2020/dra-types": "^1.8.138",
     "object-hash": "^3.0.0",
     "shpjs": "^4.0.4",
     "xml2js": "^0.6.2",
